@@ -1,12 +1,12 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import './App.css'
 import Navbar from './Navbar'
 import DemoCarousel from './Carousel'
 
 function App() {
   function fetchFunc(){
-    fetch("https://localhost:5000")
-      .then((response) => console.log(response))
+    fetch("http://localhost:5000")
+      .then((response) => response.json().then(data=>console.log(data)))
   }
   
   return (
