@@ -1,0 +1,86 @@
+{
+  "style": "carousel",
+  "cuisines": [
+    {
+      "name": "Chinese",
+      "images": [
+        {
+          "url": "./assets/chinese.png",
+          "caption": "Chinese Cuisine"
+        }
+      ]
+    },
+    {
+      "name": "Indian",
+      "images": [
+        {
+          "url": "./assets/indian.png",
+          "caption": "Indian Cuisine"
+        }
+      ]
+    },
+    {
+      "name": "Japanese",
+      "images": [
+        {
+          "url": "./assets/japanese.png",
+          "caption": "Japanese Cuisine"
+        }
+      ]
+    },
+    {
+      "name": "Italian",
+      "images": [
+        {
+          "url": "./assets/italian.png",
+          "caption": "Italian Cuisine"
+        }
+      ]
+    },
+    {
+      "name": "Mexican",
+      "images": [
+        {
+          "url": "./assets/mexican.png",
+          "caption": "Mexican Cuisine"
+        }
+      ]
+    },
+    {
+      "name": "Thai",
+      "images": [
+        {
+          "url": "./assets/Thai.png",
+          "caption": "Thai Cuisine"
+        }
+      ]
+    },
+    {
+      "name": "Georgian",
+      "images": [
+        {
+          "url": "./assets/Georgian.png",
+          "caption": "Georgian Cuisine"
+        }
+      ]
+    },
+    {
+      "name": "Spanish",
+      "images": [
+        {
+          "url": "./assets/Spanish.png",
+          "caption": "Spanish Cuisine"
+        }
+      ]
+    },
+    {
+      "name": "Greek",
+      "images": [
+        {
+          "url": "./assets/Greek.png",
+          "caption": "Greek Cuisine"
+        }
+      ]
+    }
+  ]
+}
