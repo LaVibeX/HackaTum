@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -33,10 +32,71 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
   color: #888;
+}
+
+nav{
+  display: flex;
+  position: fixed;
+  background-color: white;
+  top:0;
+  width: 100%;
+  height: 55px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#navLogo{
+  margin: auto 20px;
+  height: 30px;
+}
+
+#navLogo:hover{
+  cursor: pointer;
+}
+
+#navElements{
+  display: flex;
+}
+
+.navButtonBox{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navButtonBox:hover{
+  background-color: rgb(228, 250, 191);
+  cursor: pointer;
+}
+
+.navButton{
+  font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #242424;
+  margin: auto 10px;
+}
+ 
+#userProfile{
+  position: absolute;
+  right: 0;
+  margin: auto 20px;
+}
+
+#userProfile:hover{
+  cursor: pointer;
+}
+
+#userProfile>p{
+  font: 16px;
+  color: #242424;
+}
+
+#CarouselBox{
+  margin-top: 63px;
+  top: 50px;
+  background-color: grey;
+  height: 100px;
 }

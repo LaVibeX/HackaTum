@@ -1,19 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './Navbar'
+import DemoCarousel from './Carousel'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  function fetchFunc(){
+    fetch("https://localhost:5000")
+      .then((response) => console.log(response))
+  }
+  
   return (
-    <>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div id="rootDiv">
+        <Navbar/>
+        <div id="body">
+        <DemoCarousel/>
+        <button onClick={fetchFunc}>
+          
         </button>
+        </div>        
       </div>
-    </>
   )
 }
 
