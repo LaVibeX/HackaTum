@@ -14,14 +14,27 @@ function App() {
   const [currentSlide, setCurrentSlide] = useState(1);
   const [isLoading, setLoading] = useState(false);
 
-  function fetchFunc(){
-    fetch("http://localhost:5000")
-      .then((response) => response.json().then(data=>console.log(data)))
-  }
+  useEffect(()=>{
+    const fetchData = async ()=>{
+      await fetch("https://localhost:5000/carousel")
+      .then((response) => {
+        if(response.ok){
+          return response.json()
+        }
+        else{
+          throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }}).then((data)=>{console.log(data)})
+        .catch((e) => {
+          console.log (`Error: ${e.message}`);
+          setLoading(false);
+        })
+    }
+    fetchData();
+  },[]);
 
   function handleClick(){
     setLoading(true);
-    fetch("https://localhost:5000")
+    fetch("https://localhost:5000/")
       .then((response) => {
         if(response.ok){
           console.log(response);

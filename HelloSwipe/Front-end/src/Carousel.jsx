@@ -1,4 +1,4 @@
-import { useState} from 'react'
+import { useEffect, useState} from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -10,6 +10,8 @@ import Button from "react-bootstrap/Button"
 
 export default function Carousel({imgArray, length, currentSlide, setCurrentSlide}) {
 const [selectedDishes, setSelectedDishes] = useState(new Array(7).fill(0));
+
+
 
 console.log(selectedDishes);
 
