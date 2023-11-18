@@ -40,14 +40,15 @@ def get_cuisines(preferred_styles, recipes):
 
 def main():
     #preffered_styles = get_json_to_dict(preffered_url)
-    ingredients = ['pork', 'tomato', 'avocado'] #get_json_to_dict(ingredients_url)
+    """ingredients = ['pork', 'tomato', 'avocado'] #get_json_to_dict(ingredients_url)
     recipes = get_json_to_dict(recipes_url)
     preffered_styles = ["Mexican", "Chinese", "Indian"]
     exclusions = ["pineapple"]
     user_choice = get_cuisines(preffered_styles, recipes)
     send_post(list_to_json(ingredients_on_cuisines(user_choice)),'http://localhost:5000/ingredients_on_recipes')
-    print(common_ingredients(user_choice, ingredients,exclusions))
- 
+    print(common_ingredients(user_choice, ingredients,exclusions))"""
+    r = requests.get('http://localhost:5000/ingredients_recipes')
+    print(r.json())
 
 if __name__ == '__main__':
     main()

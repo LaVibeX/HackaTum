@@ -60,7 +60,8 @@ console.log(selectedDishes)
       })
       .then((response) => {
         if(response.ok){
-          console.log("success");
+          response.json().then((data)=>console.log(data.data))
+          
           return
         }
         else{
