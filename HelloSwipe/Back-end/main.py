@@ -19,7 +19,7 @@ def get_data_2():
 
 @app.route('/carousel', methods=['GET'])
 def get_data_1():
-    with open('D:\Codes\hellofresh\HackaTum\HelloSwipe\Front-end\src\carousel.json', 'r') as file:
+    with open('C:/Users/Gio/Desktop/RegistryApp/HackaTum/HelloSwipe/Front-end/src/carousel.json', 'r') as file:
         json_data = json.load(file)
     # Return the JSON data as a response
     return json_data

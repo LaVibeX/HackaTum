@@ -34,7 +34,7 @@ function App() {
 
   function handleClick(){
     setLoading(true);
-    fetch("https://localhost:5000/")
+    fetch("https://localhost:5000/carousel")
       .then((response) => {
         if(response.ok){
           console.log(response);
