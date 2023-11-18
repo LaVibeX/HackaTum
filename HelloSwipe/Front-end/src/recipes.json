@@ -1,0 +1,426 @@
+[
+  {
+    "index": 1,
+    "recipe": {
+      "id": "64fed0d332e9107c6db8b507",
+      "name": "Harissa chicken on quinoa with green olives",
+      "headline": "This dish produces 50% less CO2e from ingredients than an average HelloFresh recipe",
+      "prepTime": "PT25M",
+      "image": "https://img.hellofresh.com/q_auto/recipes/image/HF_Y23_R37_W44_DE_R4819-1_Main_low-661e95c9.jpg",
+      "websiteURL": "https://www.hellofresh.de/recipes/harissa-hahnchen-auf-quinoa-mit-grunen-oliven-64fed0d332e9107c6db8b507",
+      "style": "mediterranean",
+      "ingredients": [
+        "brocoli",
+        "tomato"
+      ],
+      "tags": [
+        {
+          "name": "High Protein"
+        },
+        {
+          "name": "Under 650 Calories"
+        }
+      ],
+      "nutrition": {
+        "energy": 2534,
+        "calories": 606,
+        "carbohydrate": 52.4,
+        "protein": 38.4
+      }
+    }
+  },
+  {
+    "index": 2,
+    "recipe": {
+      "id": "64df2a75552e10127649f25f",
+      "name": "Balsamic lentil salad with chicken breast",
+      "headline": "Avocado and plum dressing",
+      "prepTime": "PT25M",
+      "image": "https://img.hellofresh.com/q_auto/recipes/image/HF_Y23_R38_W36_DE_R4737-1_Main_low-127700d5.jpg",
+      "websiteURL": "https://www.hellofresh.de/recipes/balsamico-linsen-salat-mit-hahnchenbrust-64df2a75552e10127649f25f",
+      "tags": [
+        {
+          "name": "High Protein"
+        },
+        {
+          "name": "Gluten Free"
+        },
+        {
+          "name": "Low Carb"
+        }
+      ],
+      "nutrition": {
+        "energy": 2273,
+        "calories": 543,
+        "carbohydrate": 26.1,
+        "protein": 41.6
+      },
+      "style": "Mediterranean",
+      "ingredients": [
+        "lentils",
+        "chicken breast",
+        "avocado",
+        "plum"
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "recipe": {
+      "id": "64e8611440ec4203972faf1b",
+      "name": "Perlencouscous-salat with red beet and parsnip chips",
+      "headline": "This dish produces 50% less CO2e from ingredients than an average HelloFresh recipe",
+      "prepTime": "PT35M",
+      "image": "https://img.hellofresh.com/q_auto/recipes/image/HF_Y23_R39_W49_DE_R4823-1_Main__5low-208db069.jpg",
+      "websiteURL": "https://www.hellofresh.de/recipes/perlencouscous-salat-mit-rote-beete-and-pastinakenchips-64e8611440ec4203972faf1b",
+      "tags": [
+        {
+          "name": "Vegetarian"
+        },
+        {
+          "name": "Extra Vegetables"
+        },
+        {
+          "name": "Family Friendly"
+        }
+      ],
+      "nutrition": {
+        "energy": 3663,
+        "calories": 875,
+        "carbohydrate": 83.4,
+        "protein": 18
+      },
+      "style": "Mediterranean",
+      "ingredients": [
+        "pearl couscous",
+        "red beet",
+        "parsnip chips"
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "recipe": {
+      "id": "chinese_recipe_1_id",
+      "name": "Chinese Chicken Sweet and Sour",
+      "headline": "A classic Chinese dish with a spicy and sweet kick",
+      "prepTime": "PT30M",
+      "image": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3/image/chinesisches-hahnchen-sus-sauer-thermomix-7427a3ea.jpg",
+      "websiteURL": "https://www.hellofresh.de/recipes/chinesisches-hahnchen-suss-sauer-5b977decae08b529e55e0ea2",
+      "style": "Chinese",
+      "ingredients": [
+        "chicken",
+        "peanuts",
+        "vegetables"
+      ],
+      "tags": [
+        { "name": "Spicy" },
+        { "name": "Stir-fry" }
+      ],
+      "nutrition": {
+        "energy": 1800,
+        "calories": 400,
+        "carbohydrate": 20,
+        "protein": 30
+      }
+    }
+  },
+  {
+    "index": 5,
+    "recipe": {
+      "id": "chinese_recipe_2_id",
+      "name": "Dim Sum Platter",
+      "headline": "Assorted steamed and fried delicacies",
+      "prepTime": "PT45M",
+      "image": "https://i.pinimg.com/736x/2b/9a/03/2b9a031c4c02c26a47636570aea666d3.jpg",
+      "websiteURL": "https://www.example.com/chinese_recipe_2",
+      "style": "Chinese",
+      "ingredients": [
+        "pork",
+        "shrimp",
+        "dumplings"
+      ],
+      "tags": [
+        { "name": "Appetizer" },
+        { "name": "Steam-cooked" }
+      ],
+      "nutrition": {
+        "energy": 2200,
+        "calories": 480,
+        "carbohydrate": 25,
+        "protein": 28
+      }
+    }
+  },
+  {
+    "index": 6,
+    "recipe": {
+      "id": "indian_recipe_1_id",
+      "name": "Butter Chicken (Murgh Makhani)",
+      "headline": "Rich and creamy tomato-based chicken curry",
+      "prepTime": "PT40M",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2021/02/butter-chicken-ac2ff98.jpg?quality=90&webp=true&resize=440,400",
+      "websiteURL": "https://www.example.com/indian_recipe_1",
+      "style": "Indian",
+      "ingredients": [
+        "chicken",
+        "tomato",
+        "cream"
+      ],
+      "tags": [
+        { "name": "Creamy" },
+        { "name": "Curry" }
+      ],
+      "nutrition": {
+        "energy": 2100,
+        "calories": 480,
+        "carbohydrate": 22,
+        "protein": 32
+      }
+    }
+  },
+  {
+    "index": 7,
+    "recipe": {
+      "id": "indian_recipe_2_id",
+      "name": "Vegetable Biryani",
+      "headline": "Aromatic rice dish with mixed vegetables",
+      "prepTime": "PT50M",
+      "image": "https://www.cookwithmanali.com/wp-content/uploads/2019/09/Vegetable-Biryani-Restaurant-Style-768x1164.jpg",
+      "websiteURL": "https://www.example.com/indian_recipe_2",
+      "style": "Indian",
+      "ingredients": [
+        "rice",
+        "vegetables",
+        "spices"
+      ],
+      "tags": [
+        { "name": "Vegetarian" },
+        { "name": "Rice Dish" }
+      ],
+      "nutrition": {
+        "energy": 1900,
+        "calories": 420,
+        "carbohydrate": 30,
+        "protein": 18
+      }
+    }
+  },
+  {
+    "index": 8,
+    "recipe": {
+      "id": "japanese_recipe_1_id",
+      "name": "Sushi Rolls",
+      "headline": "Assorted sushi rolls with fresh fish and vegetables",
+      "prepTime": "PT40M",
+      "image": "https://www.justonecookbook.com/wp-content/uploads/2020/01/Sushi-Rolls-Maki-Sushi-%E2%80%93-Hosomaki-1106-II.jpg",
+      "websiteURL": "https://www.example.com/japanese_recipe_1",
+      "style": "Japanese",
+      "ingredients": [
+        "rice",
+        "fish",
+        "seaweed"
+      ],
+      "tags": [
+        { "name": "Sushi" },
+        { "name": "Raw Fish" }
+      ],
+      "nutrition": {
+        "energy": 1600,
+        "calories": 380,
+        "carbohydrate": 28,
+        "protein": 22
+      }
+    }
+  },
+  {
+    "index": 9,
+    "recipe": {
+      "id": "japanese_recipe_2_id",
+      "name": "Chicken Katsu",
+      "headline": "Crispy breaded chicken cutlets served with tonkatsu sauce",
+      "prepTime": "PT35M",
+      "image": "https://static01.nyt.com/images/2021/05/23/dining/kc-chicken-katsu/merlin_185308080_a60a6563-292e-4f52-a33b-386113aca0b2-mediumSquareAt3X.jpg",
+      "websiteURL": "https://www.example.com/japanese_recipe_2",
+      "style": "Japanese",
+      "ingredients": [
+        "chicken breast",
+        "breadcrumbs",
+        "tonkatsu sauce"
+      ],
+      "tags": [
+        { "name": "Fried" },
+        { "name": "Chicken Cutlets" }
+      ],
+      "nutrition": {
+        "energy": 1800,
+        "calories": 420,
+        "carbohydrate": 20,
+        "protein": 30
+      }
+    }
+  },
+  {
+    "index": 10,
+    "recipe": {
+      "id": "italian_recipe_1_id",
+      "name": "Spaghetti Carbonara",
+      "headline": "Classic pasta dish with eggs, cheese, and pancetta",
+      "prepTime": "PT30M",
+      "image": "https://www.spendwithpennies.com/wp-content/uploads/2023/04/1200-Spaghetti-Carbonara-2-SpendWithPennies.jpg",
+      "websiteURL": "https://www.example.com/italian_recipe_1",
+      "style": "Italian",
+      "ingredients": [
+        "spaghetti",
+        "eggs",
+        "pancetta"
+      ],
+      "tags": [
+        { "name": "Pasta" },
+        { "name": "Creamy Sauce" }
+      ],
+      "nutrition": {
+        "energy": 2000,
+        "calories": 460,
+        "carbohydrate": 40,
+        "protein": 25
+      }
+    }
+  },
+  {
+    "index": 11,
+    "recipe": {
+      "id": "italian_recipe_2_id",
+      "name": "Margherita Pizza",
+      "headline": "Traditional pizza with tomato, mozzarella, and basil",
+      "prepTime": "PT20M",
+      "image": "https://img.chefkoch-cdn.de/rezepte/1089921214987287/bilder/1154990/crop-642x428/pizza-margherita.jpg",
+      "websiteURL": "https://www.example.com/italian_recipe_2",
+      "style": "Italian",
+      "ingredients": [
+        "pizza dough",
+        "tomato sauce",
+        "mozzarella",
+        "basil"
+      ],
+      "tags": [
+        { "name": "Pizza" },
+        { "name": "Vegetarian" }
+      ],
+      "nutrition": {
+        "energy": 1800,
+        "calories": 400,
+        "carbohydrate": 45,
+        "protein": 18
+      }
+    }
+  },
+  {
+    "index": 13,
+    "recipe": {
+      "id": "mexican_recipe_1_id",
+      "name": "Tacos al Pastor",
+      "headline": "Marinated pork tacos with pineapple and onions",
+      "prepTime": "PT40M",
+      "image": "https://www.seriouseats.com/thmb/B06YtP6pFKI0q7qqxHUfJVr4QgM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20210712-tacos-al-pastor-melissa-hom-seriouseats-37-f72cdd02c9574bceb1eef1c8a23b76ed.jpg",
+      "websiteURL": "https://www.example.com/mexican_recipe_1",
+      "style": "Mexican",
+      "ingredients": [
+        "pork",
+        "pineapple",
+        "tortillas"
+      ],
+      "tags": [
+        { "name": "Tacos" },
+        { "name": "Marinated Pork" }
+      ],
+      "nutrition": {
+        "energy": 1900,
+        "calories": 420,
+        "carbohydrate": 35,
+        "protein": 22
+      }
+    }
+  },
+  {
+    "index": 13,
+    "recipe": {
+      "id": "mexican_recipe_2_id",
+      "name": "Guacamole",
+      "headline": "Classic avocado dip with tomatoes and lime",
+      "prepTime": "PT15M",
+      "image": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/04/Guacamole-3-2.jpg",
+      "websiteURL": "https://www.example.com/mexican_recipe_2",
+      "style": "Mexican",
+      "ingredients": [
+        "avocado",
+        "tomato",
+        "lime"
+      ],
+      "tags": [
+        { "name": "Dip" },
+        { "name": "Avocado" }
+      ],
+      "nutrition": {
+        "energy": 1200,
+        "calories": 280,
+        "carbohydrate": 15,
+        "protein": 5
+      }
+    }
+  },
+  {
+    "index": 14,
+    "recipe": {
+      "id": "thai_recipe_1_id",
+      "name": "Tom Yum Goong",
+      "headline": "Spicy and sour shrimp soup with lemongrass and lime",
+      "prepTime": "PT30M",
+      "image": "https://hot-thai-kitchen.com/wp-content/uploads/2013/03/tom-yum-goong-blog.jpg",
+      "websiteURL": "https://www.example.com/thai_recipe_1",
+      "style": "Thai",
+      "ingredients": [
+        "shrimp",
+        "lemongrass",
+        "lime"
+      ],
+      "tags": [
+        { "name": "Soup" },
+        { "name": "Spicy" }
+      ],
+      "nutrition": {
+        "energy": 1500,
+        "calories": 350,
+        "carbohydrate": 25,
+        "protein": 20
+      }
+    }
+  },
+  {
+    "index": 15,
+    "recipe": {
+      "id": "thai_recipe_2_id",
+      "name": "Pad Thai",
+      "headline": "Stir-fried rice noodles with tofu, peanuts, and tamarind sauce",
+      "prepTime": "PT40M",
+      "image": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3/image/thai-basilikum-stir-fry-nach-art-pad-kra-pao-324aaf2a.jpg",
+      "websiteURL": "https://www.hellofresh.de/recipes/thai-basilikum-stir-fry-nach-art-pad-kra-pao-62ab3088dba50c49b9096564",
+      "style": "Thai",
+      "ingredients": [
+        "rice noodles",
+        "tofu",
+        "peanuts"
+      ],
+      "tags": [
+        { "name": "Noodles" },
+        { "name": "Stir-fry" }
+      ],
+      "nutrition": {
+        "energy": 1700,
+        "calories": 400,
+        "carbohydrate": 40,
+        "protein": 15
+      }
+    }
+  }
+]
