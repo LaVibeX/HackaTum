@@ -1,36 +1,55 @@
-import FlashCard from "./Flashcard";
-import React, { Component } from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import { useState} from 'react'
+import { v4 as uuidv4 } from 'uuid';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import { EffectCards } from 'swiper/modules';
+import heart from "./assets/heart.png"
+import Button from "react-bootstrap/Button"
 
-// export default function Carousel() {
-//     return (
-//       <div id="CarouselBox">
-        
-//       </div>
-//     );
-//   }
 
-class DemoCarousel extends Component {
-    render() {
-        return (
-            <Carousel>
-                <div>
-                    <img src="assets\Hello_Fresh_Lockup.png" />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src="assets\Hello_Fresh_Lockup.png" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="assets\Hello_Fresh_Lockup.png" />
-                    <p className="legend">Legend 3</p>
-                </div>
-            </Carousel>
-        );
-    }
+export default function Carousel({imgArray, length, currentSlide, setCurrentSlide}) {
+const [selectedDishes, setSelectedDishes] = useState(new Array(7).fill(0));
+
+console.log(selectedDishes);
+
+const preSlides = imgArray.map((value,index)=>{
+    return(
+            <SwiperSlide key={index} className="slideAll" id={`currentSlide${index}`} onDoubleClick={() => {
+            setSelectedDishes((prevArray)=>{
+                let newArray = [...prevArray];
+                console.log(newArray);
+                newArray[index] = !newArray[index];
+                return newArray
+            })
+            // console.log(`clicked${index}`);
+         }}><img className = "slideImg" src={imgArray[index]}/>
+         
+         <div className={`heartOverlay${selectedDishes[index]?' show':''}`} id={`heart${index}`}>
+          <img src={heart} alt="heart" />
+        </div>
+
+        <div className='cuisineNames' id={`name${index}`}>
+         <p>Georgia</p>
+        </div>
+         </SwiperSlide>
+    )
+})
+
+  return (
+    <div id="carouselComponent">
+        <h1 id="componentTitle">Choose your favorite cuisines!</h1>
+      <Swiper
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]}
+        className="mySwiper"
+      >
+        {preSlides}
+        {/* <div id="heart1">
+            <img  src={heart}/> </div> */}
+      </Swiper>
+      
+    </div>
+  );
 }
-
-export default DemoCarousel
-  
