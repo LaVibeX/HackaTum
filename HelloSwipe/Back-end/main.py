@@ -24,7 +24,16 @@ def get_data_1():
     # Return the JSON data as a response
     return json_data
 
-
+@app.route('/preffered_styles', methods=['POST'])
+def post_styles():
+    if request.method == 'POST':
+        data = request.json  # Assuming the data is sent as JSON in the request
+        app.preffered_styles = data
+        # Process the received dat'a
+        print(data)
+        return jsonify(data)
+    else:
+        return jsonify({'message': 'This endpoint only accepts POST requests'})
 
 @app.route('/ingredients_on_recipes', methods=['POST'])
 def post_example():

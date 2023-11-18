@@ -1,29 +1,42 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './Navbar'
-import DemoCarousel from './DemoCarousel'
 import Carousel from './Carousel'
 import Button from 'react-bootstrap/Button';
-import logo1 from "./assets/georgian.png"; //import images for now
-import logo2 from "./assets/chinese.png";
-import logo3 from "./assets/japanese.png";
 
-const imgArray = [logo1,logo2, logo3];
 
 function App() {
-  const [currentSlide, setCurrentSlide] = useState(1);
   const [isLoading, setLoading] = useState(false);
+  const [cuisines,setCuisines] = useState(new Array(9).fill(0));
+  const [selectedDishes, setSelectedDishes] = useState({
+    'Chinese' : 0,
+    'Georgian' : 0,
+    'Italian': 0,
+    'Indian': 0,
+    'Japanese': 0,
+    'Mexican': 0,
+    'Spanish': 0,
+    'Thai': 0,
+    'Greek':0
+  });
+console.log(selectedDishes)
+  console.log(cuisines);
 
   useEffect(()=>{
     const fetchData = async ()=>{
-      await fetch("https://localhost:5000/carousel")
+      await fetch("http://localhost:5000/carousel")
       .then((response) => {
         if(response.ok){
           return response.json()
         }
         else{
           throw new Error(`Error: ${response.status} ${response.statusText}`);
-        }}).then((data)=>{console.log(data)})
+        }}).then((data)=>{
+          console.log(data);
+          // console.log(selectedDishes);
+          setCuisines(()=>[...data['cuisines']]);
+          return
+        })
         .catch((e) => {
           console.log (`Error: ${e.message}`);
           setLoading(false);
@@ -34,27 +47,42 @@ function App() {
 
   function handleClick(){
     setLoading(true);
-    fetch("https://localhost:5000/carousel")
+    const sendData = async()=> {
+      await fetch("http://localhost:5000/preffered_styles", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(selectedDishes),
+      })
       .then((response) => {
         if(response.ok){
-          console.log(response);
-          setLoading(false);
+          console.log("success");
+          return
         }
         else{
           throw new Error(`Error: ${response.status} ${response.statusText}`);
-        }})
+        }}).then((data)=>{
+          console.log(data);
+          setLoading(false);
+
+          return
+        })
         .catch((e) => {
           console.log (`Error: ${e.message}`);
           setLoading(false);
         })
-  }
+    }
+    sendData();
+    }
   
   return (
       <div id="rootDiv">
         <Navbar/>
         <div id="body">
         {/* <DemoCarousel/> */}
-        <Carousel imgArray={imgArray} length={imgArray.length} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
+        {(cuisines[0]!=0)?
+        <Carousel cuisinesArray={cuisines} selectedDishes={selectedDishes} setSelectedDishes={setSelectedDishes} />:''}
         <Button
         id = "nextBtn"
       variant="primary"
