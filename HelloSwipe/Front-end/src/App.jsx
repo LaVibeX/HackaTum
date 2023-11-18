@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './Navbar'
 import Carousel from './Carousel'
 import Button from 'react-bootstrap/Button';
-
+import Ingredients from './Ingredients'
 
 function App() {
   const [isLoading, setLoading] = useState(false);
@@ -19,6 +19,9 @@ function App() {
     'Thai': 0,
     'Greek':0
   });
+
+const [listOfIngredients, setListOfIngredients] = useState({'potasdsasdasddsdst':0, 'tomato':0, 'curry':0, 'water':0, 'tapas':0, 'rapas':0, 'japas':0, 'stupido':0})
+
 console.log(selectedDishes)
   console.log(cuisines);
 
@@ -91,7 +94,7 @@ console.log(selectedDishes)
     >
       {isLoading ? 'Loading…' : 'Next'}
     </Button>
-
+    <Ingredients listOfIngredients={listOfIngredients} setListOfIngredients={setListOfIngredients}/>
         </div>        
       </div>
   )
