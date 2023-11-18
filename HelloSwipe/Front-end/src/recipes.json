@@ -328,7 +328,8 @@
       "ingredients": [
         "pork",
         "pineapple",
-        "tortillas"
+        "tortillas",
+        "tomato"
       ],
       "tags": [
         { "name": "Tacos" },
@@ -343,7 +344,7 @@
     }
   },
   {
-    "index": 13,
+    "index": 14,
     "recipe": {
       "id": "mexican_recipe_2_id",
       "name": "Guacamole",
