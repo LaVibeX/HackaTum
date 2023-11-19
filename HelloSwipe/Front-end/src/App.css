@@ -124,7 +124,7 @@ nav {
 }
 
 .heartOverlay {
-  background-color: white;
+  background-color: rgba(255,255,255,0.75);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,6 +133,7 @@ nav {
   border-radius: 6px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   
   opacity: 0;
   position: absolute;
   top: 15%;
@@ -178,6 +179,7 @@ nav {
 }
 
 .nextBtn {
+  background-color: #045832;
   width: 120px;
   font-size: 20px;
   font-family: Barlow, Verdana, Geneva, sans-serif;
@@ -296,11 +298,131 @@ h2{
   font-size: 17px !important;
 }
 
-#pic1{
+.picback{
   width: 250px;
+  max-height: 250px;
   position: absolute;
-  left: 170px;
-  top: 130px;
   z-index: 0;
   -webkit-user-drag: none;
+}
+
+#pic1{
+  left: 150px;
+  top: 130px;
+}
+
+#pic2{
+  right: 120px;
+  top: 180px;
+}
+
+#pic3{
+  left: 230px;
+  top: 470px;
+}
+
+#pic4{
+  right: 220px;
+  top: 470px;
+}
+
+.boxDish{
+  background-color: black;
+}
+
+#hr2{
+  margin-top: 30px;
+  border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+}
+
+h3{
+  margin-top: 30px;
+  color: rgb(43, 43, 43);
+  font-family: Barlow, Verdana, Geneva, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.boxDish>img{
+  width: 300px;
+  max-height: 300px;
+  border-start-start-radius: 8px;
+  border-start-end-radius: 8px;
+}
+
+.boxDish{
+  max-width: 300px;
+  min-height: 450px;
+  max-height: 450px;
+  background-color: white; 
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  
+  overflow: hidden;
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+.boxDish>hr{
+  margin-top: -10px;
+  border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+}
+
+.dishTitleName{
+  margin-top: 2px;
+  color: #045832;
+  font-family: Barlow, Verdana, Geneva, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#ingredientTitle{
+  margin-top: -8px;
+  color: rgb(43, 43, 43);
+  font-family: Barlow, Verdana, Geneva, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#ingredientList{
+  margin-top: -9px;
+  color: rgb(43, 43, 43);
+  font-family: Barlow, Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#cardGrid{
+  display: grid;  
+  row-gap: 50px;
+
+  grid-template-columns: repeat(3, 1fr);
+  margin: 35px auto;
+  width:75%;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+  padding: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+    
+}
+
+#disclaimer{
+  margin-top: -35px;
+  margin-bottom: 30px;
+  color: rgb(43, 43, 43);
+  font-family: Barlow, Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
 }

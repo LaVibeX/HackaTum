@@ -6,6 +6,9 @@ import Button from "react-bootstrap/Button";
 import Ingredients from "./Ingredients";
 import Final from "./Final"
 import pic1 from "./assets/background/pic1.png"
+import pic2 from "./assets/background/pic2.png"
+import pic3 from "./assets/background/pic6.png"
+import pic4 from "./assets/background/pic4.png"
 
 function App() {
   const [isLoading, setLoading] = useState(false);
@@ -26,6 +29,7 @@ function App() {
   const [listOfIngredients, setListOfIngredients] = useState({});
   const [dataReady, setDataReady] = useState(false);
   const [finalReady, setFinalReady] = useState(false);
+  let [allDishes, setAllDishes] = useState([]);
 
   // console.log(selectedDishes);
   console.log(cuisines);
@@ -54,6 +58,7 @@ function App() {
     };
     fetchData();
   }, []);
+  
 
   function handleClick() {
     setLoading(true);
@@ -118,7 +123,8 @@ function App() {
             console.log(response);
             response.json().then((data) => {
               console.log(data);
-              setFinalReady(true);  
+              setFinalReady(true);
+              setAllDishes(()=>data.data);  
               console.log(data.data);
             });
             return;
@@ -144,7 +150,10 @@ function App() {
     <div id="rootDiv">
       <Navbar />
       <div id="body">
-        <img id='pic1' src={pic1}/>
+        <img id='pic1' className="picback" src={pic1}/>
+        <img id='pic2' className="picback"  src={pic2}/>
+        <img id='pic3' className="picback"  src={pic3}/>
+        <img id='pic4' className="picback"  src={pic4}/>
         {cuisines[0] != 0 ? (
           <Carousel
             cuisinesArray={cuisines}
@@ -154,6 +163,7 @@ function App() {
         ) : (
           ""
         )}
+        <p id="disclaimer">Double-click the cards to select</p>
         <Button
           className="nextBtn"
           variant="primary"
@@ -170,7 +180,7 @@ function App() {
           setLoading={setLoading2}
 
         />: ''}
-        {finalReady? <Final/>  :''}
+        {finalReady? <Final allDishes={allDishes}/>  :''}
 
       </div>
     </div>
