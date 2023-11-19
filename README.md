@@ -17,5 +17,5 @@
 
 
 # The Website
+![mainscreen](https://github.com/Aplus21/HackaTum/assets/51851937/83d271bd-642b-4d9c-a6be-3a244f573fe1)
 
-![main_screen](https://github.com/Aplus21/HackaTum/assets/51851937/59da5aed-cb09-4c07-b56f-efd616734a5f)
