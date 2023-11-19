@@ -20,13 +20,13 @@ CORS(app)
 #     return "Hello, world"
 @app.route('/recipes', methods=['GET'])
 def get_recipes():
-    with open(r'D:\Codes\hellofresh\HackaTum\HelloSwipe\Front-end\src\recipes.json') as file:
+    with open(r'..\Front-end\src\recipes.json') as file:
         recipes = json.load(file)
     return recipes
 
 @app.route('/carousel', methods=['GET'])
 def get_carousel():
-    with open('D:\Codes\hellofresh\HackaTum\HelloSwipe\Front-end\src\carousel.json', 'r') as file:
+    with open('..\Front-end\src\carousel.json', 'r') as file:
         json_data = json.load(file)
     # Return the JSON data as a response
     return json_data

@@ -192,17 +192,25 @@ nav {
 }
 
 .checkBoxDiv {
-  background-color: black;
+  background-color: white;
   width: 180px;
+  border: 1px solid grey;
+  color: rgb(43, 43, 43);
   border-radius: 8px;
   margin: 10px auto;
   overflow: hidden;
   text-overflow: ellipsis;
+  height: 75px;
+  max-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkBoxDiv:hover{
-  background-color: grey;
+  background-color: rgb(228, 250, 191);
   cursor: pointer;
+  border-color: #067A46;
 }
 
 .checkBoxDiv > p {
@@ -218,7 +226,9 @@ nav {
   grid-template-columns: repeat(6, 1fr);
   margin: 35px auto;
   width: 65%;
-  background-color: yellow;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
   padding: 50px;
   overflow: hidden;
   border-radius: 10px;
@@ -261,14 +271,36 @@ nav {
 }
 
 .ticked{
-  background-color: red;
+  background-color: #067A46;
+  color: white;
+  font-weight: bold;
+}
+
+.ticked:hover{
+  background-color: #045832;
 }
 
 h2{
-
-  color: red
+  margin-top: 30px;
+  color: rgb(43, 43, 43);
+  font-family: Barlow, Verdana, Geneva, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 #btn2{
   margin-top: 5px;
+}
+
+.mini{
+  font-size: 17px !important;
+}
+
+#pic1{
+  width: 250px;
+  position: absolute;
+  left: 170px;
+  top: 130px;
+  z-index: 0;
+  -webkit-user-drag: none;
 }

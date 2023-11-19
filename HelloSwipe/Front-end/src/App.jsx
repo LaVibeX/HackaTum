@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import Carousel from "./Carousel";
 import Button from "react-bootstrap/Button";
 import Ingredients from "./Ingredients";
+import Final from "./Final"
+import pic1 from "./assets/background/pic1.png"
 
 function App() {
   const [isLoading, setLoading] = useState(false);
@@ -21,17 +23,9 @@ function App() {
     Greek: 0,
   });
 
-  const [listOfIngredients, setListOfIngredients] = useState({
-    // potasdsasdasddsdst: 0,
-    // tomato: 0,
-    // curry: 0,
-    // water: 0,
-    // tapas: 0,
-    // rapas: 0,
-    // japas: 0,
-    // stupido: 0,
-  });
+  const [listOfIngredients, setListOfIngredients] = useState({});
   const [dataReady, setDataReady] = useState(false);
+  const [finalReady, setFinalReady] = useState(false);
 
   // console.log(selectedDishes);
   console.log(cuisines);
@@ -112,7 +106,7 @@ function App() {
   function sendIngredients() {
     setLoading2(true);
     const sendData = async () => {
-      await fetch("http://localhost:5000/user_ingredients", {
+      await fetch("http://localhost:5000/selected_ingredients", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -124,7 +118,7 @@ function App() {
             console.log(response);
             response.json().then((data) => {
               console.log(data);
-                // setDataReady(true);  
+              setFinalReady(true);  
               console.log(data.data);
             });
             return;
@@ -150,7 +144,7 @@ function App() {
     <div id="rootDiv">
       <Navbar />
       <div id="body">
-        {/* <DemoCarousel/> */}
+        <img id='pic1' src={pic1}/>
         {cuisines[0] != 0 ? (
           <Carousel
             cuisinesArray={cuisines}
@@ -176,6 +170,7 @@ function App() {
           setLoading={setLoading2}
 
         />: ''}
+        {finalReady? <Final/>  :''}
 
       </div>
     </div>

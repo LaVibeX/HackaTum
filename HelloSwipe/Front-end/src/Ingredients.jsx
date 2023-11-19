@@ -13,7 +13,7 @@ export default function Ingredients({listOfIngredients, setListOfIngredients, se
                 return newObj
             })}} 
             className={`checkBoxDiv${listOfIngredients[value]?' ticked':''}`}>
-                <p>{value}</p>
+                <p className={value.length>10?'mini':''}>{value.charAt(0).toUpperCase() + value.slice(1)}</p>
                 </div>  
         )
     })
@@ -33,7 +33,7 @@ export default function Ingredients({listOfIngredients, setListOfIngredients, se
           disabled={Loading}
           onClick={!Loading ? sendIngredients : null}
         >
-          {Loading ? "Loading…" : "Next"}
+          {Loading ? "Loading…" : "Cook!"}
         </Button>
         </div>
 
