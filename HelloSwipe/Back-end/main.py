@@ -37,30 +37,35 @@ def post_styles():
         data = request.json  # Assuming the data is sent as JSON in the request
         app.preffered_styles = data
         # Process the received data
-        app.preffered_styles = [", ".join(key for key, value in app.preffered_styles.items() if value)]
+        app.preffered_styles = ", ".join(key for key, value in app.preffered_styles.items() if value)
+        print(app.preffered_styles)
         app.user_choice = get_cuisines(app.preffered_styles, get_recipes())
         return jsonify({'data': ingredients_on_cuisines(app.user_choice)})
     else:
         return jsonify({'message': 'This endpoint only accepts POST requests'})
 
-"""@app.route('/user_ingredients', methods=['POST'])
-def get_ingredients():
+@app.route('/selected_ingredients', methods=['POST'])
+def get_final_recipes():
+    if request.method == 'POST':
+        exclusions = ["peanuts"]
+        user_ingredients = request.json 
+        return ({'data': common_ingredients(app.user_choice, user_ingredients ,exclusions)})
+    else:
+        return jsonify({'message': 'This endpoint only accepts POST requests'})
+
+"""
+@app.route('/selected_ingredients', methods=['POST'])
+def get_final_recipes():
     if request.method == 'POST':
         data = request.json 
-        user_ingredients = data 
-        return (data)
-    else:
-        return jsonify({'message': 'This endpoint only accepts POST requests'})"""
 
-
-@app.route('/ingredients_recipes', methods=['GET'])
-def get_ingredients():
     if hasattr(app, 'preffered_styles'):
       app.user_choice = get_cuisines(app.preffered_styles, get_recipes())
+      print(app.user_choice)
       return jsonify(ingredients_on_cuisines(app.user_choice))
     else:
         print('message:  No recent data')
-        return jsonify({'message': 'No recent data'})
+        return jsonify({'message': 'No recent data'})"""
 
 def print_received_data():
     global preffered_styles
