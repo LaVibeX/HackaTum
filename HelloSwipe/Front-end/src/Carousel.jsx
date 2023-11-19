@@ -16,6 +16,7 @@ import Spanish from "./assets/spanish.png"
 import Thai from "./assets/thai.png"
 import Greek from "./assets/greek.png"
 
+
 export default function Carousel({cuisinesArray, selectedDishes, setSelectedDishes}) {
 
 const imageSrc = {
@@ -69,7 +70,6 @@ const preSlides = cuisinesArray.map((value,index)=>{
         {/* <div id="heart1">
             <img  src={heart}/> </div> */}
       </Swiper>
-      
     </div>
   );
 }
