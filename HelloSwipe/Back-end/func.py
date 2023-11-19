@@ -37,7 +37,7 @@ def list_to_json(value):
 
 def get_cuisines(preferred_styles, recipes):
     return [recipe for recipe in recipes if recipe["recipe"]["style"] in preferred_styles]
-
+    
 def main():
     #preffered_styles = get_json_to_dict(preffered_url)
     """ingredients = ['pork', 'tomato', 'avocado'] #get_json_to_dict(ingredients_url)
