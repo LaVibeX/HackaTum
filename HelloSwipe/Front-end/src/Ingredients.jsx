@@ -1,19 +1,40 @@
 
-export default function Ingredients({listOfIngredients, setListOfIngredients}){
-    const arrayOfIngredients = Object.keys(listOfIngredients);
+import Button from "react-bootstrap/Button";
 
+export default function Ingredients({listOfIngredients, setListOfIngredients, sendIngredients, Loading, setLoading}){
+    const arrayOfIngredients = Object.keys(listOfIngredients);
+    // console.log(listOfIngredients   );
     const checkBoxes = arrayOfIngredients.map((value, index)=>{
         return (
-            <div key={index} className="checkBoxDiv"><p>{value}</p></div>  
+            <div key={index} onClick={()=>{setListOfIngredients((oldObj)=>{
+                let newObj = {};
+                newObj = {...oldObj};
+                newObj[value] = !newObj[value];
+                return newObj
+            })}} 
+            className={`checkBoxDiv${listOfIngredients[value]?' ticked':''}`}>
+                <p>{value}</p>
+                </div>  
         )
     })
 
     return(
         <div>
             <hr id="hr1"/>
+            <h2>Which ingredients do you prefer?</h2>
                     <div id="checkBoxWrap">
+                        
            {checkBoxes}
         </div>
+        <Button
+          id="btn2"
+          className = "nextBtn"
+          variant="primary"
+          disabled={Loading}
+          onClick={!Loading ? sendIngredients : null}
+        >
+          {Loading ? "Loading…" : "Next"}
+        </Button>
         </div>
 
     )

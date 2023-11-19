@@ -177,24 +177,25 @@ nav {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-#nextBtn {
+.nextBtn {
   width: 120px;
   font-size: 20px;
   font-family: Barlow, Verdana, Geneva, sans-serif;
   margin: 0;
+  border-width: 2px;
   padding: 10px;
 }
 
-#nextBtn:hover {
+.nextBtn:hover {
   border-color: rgb(133, 209, 3);
-  border-width: 1px;
+  transform: translateY(1px);
 }
 
 .checkBoxDiv {
   background-color: black;
   width: 180px;
   border-radius: 8px;
-  margin: 10px;
+  margin: 10px auto;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -215,7 +216,7 @@ nav {
 #checkBoxWrap {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  margin: 50px auto;
+  margin: 35px auto;
   width: 65%;
   background-color: yellow;
   padding: 50px;
@@ -257,4 +258,17 @@ nav {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     width: 90%;
+}
+
+.ticked{
+  background-color: red;
+}
+
+h2{
+
+  color: red
+}
+
+#btn2{
+  margin-top: 5px;
 }
