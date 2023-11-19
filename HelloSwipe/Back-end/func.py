@@ -24,7 +24,7 @@ def common_ingredients(recipes, user_ingredients, exclusions):
     for recipe in recipes:
         counter = sum(1 for ingredient in user_ingredients if ingredient in recipe["recipe"]["ingredients"])
         if all(exclusion not in recipe["recipe"]["ingredients"] for exclusion in exclusions):
-            list_recipe.append([counter, recipe["recipe"]["name"]])
+            list_recipe.append([counter, recipe["recipe"]])
 
     list_recipe.sort(key=lambda x: x[0], reverse=True)
     return list_recipe
