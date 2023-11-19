@@ -17,5 +17,8 @@
 
 
 # The Website
-![mainscreen](https://github.com/Aplus21/HackaTum/assets/51851937/83d271bd-642b-4d9c-a6be-3a244f573fe1)
+![image](https://github.com/Aplus21/HackaTum/assets/52439101/aaafa102-2f12-42fb-b467-b0731b820766)
+
+# Slides and Presentation
+https://www.canva.com/design/DAF0hK85_eA/jqdhEVMZJf8ArylWOS_VEA/view?utm_content=DAF0hK85_eA&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
