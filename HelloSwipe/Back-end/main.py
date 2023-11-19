@@ -49,7 +49,11 @@ def get_final_recipes():
     if request.method == 'POST':
         exclusions = ["peanuts"]
         user_ingredients = request.json 
-        return ({'data': common_ingredients(app.user_choice, user_ingredients ,exclusions)})
+        dic_user_ingredients = ", ".join(key for key, value in user_ingredients.items() if value)
+        list_user_ingredients = dic_user_ingredients.split(',')
+        list_without_spaces = [string.replace(" ", "") for string in list_user_ingredients]
+        print(list_without_spaces)
+        return ({'data': common_ingredients(app.user_choice, list_without_spaces ,exclusions)})
     else:
         return jsonify({'message': 'This endpoint only accepts POST requests'})
 
