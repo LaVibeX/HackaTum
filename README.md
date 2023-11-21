@@ -22,3 +22,5 @@
 # Slides and Presentation
 https://www.canva.com/design/DAF0hK85_eA/jqdhEVMZJf8ArylWOS_VEA/view?utm_content=DAF0hK85_eA&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
+
+Made by: Andrés Tito, Giorgi Japaridze and Vayun K Soni
