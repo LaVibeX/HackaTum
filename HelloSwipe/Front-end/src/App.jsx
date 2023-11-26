@@ -37,7 +37,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch("http://localhost:5000/carousel")
+      await fetch( "https://hello-swipe-1f541b705788.herokuapp.com/carousel")
         .then((response) => {
           if (response.ok) {
             return response.json();
@@ -63,7 +63,7 @@ function App() {
   function handleClick() {
     setLoading(true);
     const sendData = async () => {
-      await fetch("http://localhost:5000/preffered_styles", {
+      await fetch("https://hello-swipe-1f541b705788.herokuapp.com/preffered_styles", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -111,7 +111,7 @@ function App() {
   function sendIngredients() {
     setLoading2(true);
     const sendData = async () => {
-      await fetch("http://localhost:5000/selected_ingredients", {
+      await fetch("https://hello-swipe-1f541b705788.herokuapp.com/selected_ingredients", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
