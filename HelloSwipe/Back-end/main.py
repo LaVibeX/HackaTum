@@ -57,20 +57,6 @@ def get_final_recipes():
     else:
         return jsonify({'message': 'This endpoint only accepts POST requests'})
 
-"""
-@app.route('/selected_ingredients', methods=['POST'])
-def get_final_recipes():
-    if request.method == 'POST':
-        data = request.json 
-
-    if hasattr(app, 'preffered_styles'):
-      app.user_choice = get_cuisines(app.preffered_styles, get_recipes())
-      print(app.user_choice)
-      return jsonify(ingredients_on_cuisines(app.user_choice))
-    else:
-        print('message:  No recent data')
-        return jsonify({'message': 'No recent data'})"""
-
 def print_received_data():
     global preffered_styles
     print(preffered_styles)
